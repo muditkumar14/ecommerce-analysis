@@ -1,50 +1,59 @@
 # E-commerce Customer & Revenue Analysis
 
-## 📌 Project Overview
+## 📌 Overview
 
-This project analyzes customer purchasing behavior and revenue trends using Python (Pandas) and SQL.
+This project analyzes customer purchasing behavior and revenue trends using Python, SQL, and data visualization.
 
-## 🎯 Objective
+## 🎯 Objectives
 
-To derive business insights such as:
+- Identify top customers by spending
+- Analyze revenue distribution across cities
+- Track monthly revenue trends
 
-- Top customers by spending
-- Revenue distribution across cities
-- Monthly revenue trends
-
-## 🛠️ Tools & Technologies
+## 🛠️ Tech Stack
 
 - Python (Pandas)
 - SQL
-- Jupyter Notebook
-- VS Code
+- Matplotlib
+- VS Code / Jupyter Notebook
 
 ## 📂 Dataset
 
-Custom dataset containing:
+Custom dataset with:
 
 - Orders (order_id, customer_id, order_date, amount)
 - Customers (customer_id, name, city)
 
-## 📊 Key Analysis Performed
+## 📊 Analysis Performed
 
-- Total orders, customers, and revenue calculation
-- Customer-wise revenue analysis
-- City-wise revenue distribution
-- Monthly revenue trend analysis
+- Total orders, customers, and revenue
+- Customer-wise spending analysis
+- City-wise revenue distribution (JOIN)
+- Monthly revenue trend (time-based analysis)
+
+## 📈 Visualization
+
+- Bar chart: Revenue by City
+- Line chart: Monthly Revenue Trend
+- Pie chart: Customer Contribution
 
 ## 💡 Key Insights
 
-- Customer 101 is the highest revenue contributor
-- Delhi generates the highest revenue
-- Revenue shows growth trend with peak in March
+- Customer 101 contributes the highest revenue
+- Delhi generates the highest revenue among cities
+- Revenue peaks in March, indicating growth trend
 
 ## 🚀 Outcome
 
-This project demonstrates data analysis skills including data cleaning, merging datasets, aggregation, and deriving business insights.
+Demonstrates end-to-end data analysis skills including data handling, SQL querying, feature engineering, and visualization.
 
-## 📊 Visualization
+## 📊 Ecommerce Dashboard
 
-- Revenue by City (Bar Chart)
-- Monthly Revenue Trend (Line Chart)
-- Customer Contribution (Pie Chart)
+Total Orders: 10
+Total Revenue: ₹14200
+
+[Revenue by City chart]
+![alt text](image-1.png)
+
+[Monthly Trend chart]
+![alt text](image-1.png)
