@@ -57,3 +57,7 @@ Total Revenue: ₹14200
 
 [Monthly Trend chart]
 ![alt text](image-1.png)
+
+## 🚀 Live Dashboard
+
+[Click here to view the app](YOUR_LINK_HERE)
