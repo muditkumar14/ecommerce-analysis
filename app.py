@@ -34,6 +34,14 @@ if city_filter != "All":
     filtered_data = merged[merged['city'] == city_filter]
 else:
     filtered_data = merged
+customer_filter = st.sidebar.selectbox(
+    "Select Customer",
+    ["All"] + list(merged['customer_id'].unique())
+)
+
+# Apply customer filter
+if customer_filter != "All":
+    filtered_data = filtered_data[filtered_data['customer_id'] == customer_filter]
 
 # Safety check
 if filtered_data.empty:
@@ -41,7 +49,9 @@ if filtered_data.empty:
     st.stop()
 
 # ---------------- KPI SECTION ----------------
-col1, col2, col3 = st.columns(3)
+avg_order = total_revenue / total_orders
+st.metric("Avg Order Value", f"₹ {avg_order:.2f}")
+col1, col2, col3, col4 = st.columns(4)
 
 total_orders = filtered_data.shape[0]
 total_revenue = filtered_data['amount'].sum()
@@ -97,6 +107,10 @@ st.write("• Customer 101 contributes the highest revenue.")
 st.write("• Delhi is the top-performing city.")
 st.write("• Revenue shows growth trend with peak in March.")
 
+if total_revenue > 10000:
+    st.success("Revenue is performing strongly 📈")
+else:
+    st.warning("Revenue needs improvement 📉")
 # ---------------- FOOTER ----------------
 st.markdown("---")
 st.markdown("Built using Python, Pandas, SQL & Streamlit")
