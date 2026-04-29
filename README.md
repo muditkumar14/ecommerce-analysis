@@ -79,7 +79,7 @@ Custom dataset containing:
 
 ## 📸 Dashboard Preview
 
-### Main Dashboard
+### Full Dashboard
 
 ![Dashboard](images/dashboard.png)
 
