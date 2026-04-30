@@ -49,13 +49,13 @@ if filtered_data.empty:
     st.stop()
 
 # ---------------- KPI SECTION ----------------
-avg_order = total_revenue / total_orders
-st.metric("Avg Order Value", f"₹ {avg_order:.2f}")
 col1, col2, col3, col4 = st.columns(4)
 
 total_orders = filtered_data.shape[0]
 total_revenue = filtered_data['amount'].sum()
 
+avg_order = total_revenue / total_orders
+st.metric("Avg Order Value", f"₹ {avg_order:.2f}")
 customer_spend = filtered_data.groupby('customer_id')['amount'].sum()
 top_customer = customer_spend.idxmax()
 top_amount = customer_spend.max()

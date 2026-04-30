@@ -109,7 +109,7 @@ The dashboard enables interactive filtering and real-time analysis of customer a
 
 ### Full Dashboard
 
-![Dashboard](images/dashboard.png)
+![Dashboard](images/Dashboard.png)
 
 ### Revenue by City
 
